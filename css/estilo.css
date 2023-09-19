@@ -9,12 +9,13 @@ header {
   /*NAV*/ }
   header .logoHot {
     width: 180px;
-    height: 100px; }
+    height: 100px;
+    margin-left: 30px; }
   header .fuentesNav {
-    font-size: 1.4rem;
-    padding-left: 3rem; }
+    font-size: 1.3rem;
+    padding-left: 2rem; }
     header .fuentesNav li {
-      margin-left: 150px; }
+      margin-left: 80px; }
 
 .error {
   background-color: white; }
@@ -35,46 +36,39 @@ header {
         text-decoration: none;
         font-size: 1.5rem; }
 
-.fondoIndex {
-  background-image: url("../img/Fondo Index");
-  background-repeat: no-repeat;
-  height: calc(100vh - 100px);
-  background-size: cover; }
-  .fondoIndex .queSomos {
-    text-align: center;
+main .queSomos {
+  text-align: center;
+  text-decoration: underline;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  color: black;
+  font-family: 'Roboto', sans-serif; }
+
+main .fondoForm {
+  top: 1rem;
+  box-shadow: 0 10px 30px #000;
+  border: 1px solid #ffffff40; }
+  main .fondoForm .glass-effect {
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem); }
+  main .fondoForm .tituloForm {
     text-decoration: underline;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 2rem;
-    color: black;
-    font-family: 'Roboto', sans-serif; }
-  .fondoIndex .fondoForm {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    box-shadow: 0 10px 30px #000;
-    border: 1px solid #ffffff40; }
-    .fondoIndex .fondoForm .glass-effect {
-      background-color: #fafafa10;
-      backdrop-filter: blur(0.4rem); }
-    .fondoIndex .fondoForm .tituloForm {
-      text-decoration: underline;
-      color: coral; }
-    .fondoIndex .fondoForm .loremForm {
-      color: black; }
-  .fondoIndex .colorBtn {
-    background-color: white;
-    color: c black;
-    font-size: 1.5rem;
-    margin: 5px; }
-    .fondoIndex .colorBtn:hover {
-      background-color: coral;
-      color: black; }
-  .fondoIndex .smallForm {
-    font-size: 20px; }
+    color: coral; }
+  main .fondoForm .loremForm {
+    color: black; }
+
+main .colorBtn {
+  background-color: white;
+  color: c black;
+  font-size: 1.5rem;
+  margin: 5px; }
+  main .colorBtn:hover {
+    background-color: coral;
+    color: black; }
+
+main .smallForm {
+  font-size: 20px; }
 
 main .dropdown {
   text-align: center;

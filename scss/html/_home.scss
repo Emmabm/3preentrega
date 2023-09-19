@@ -3,13 +3,7 @@
 
 //Index
 
-.fondoIndex {
-    background-image: url("../img/Fondo\ Index");
-    background-repeat: no-repeat;
-    height: calc(100vh - 100px);
-    background-size: cover;
-   
-
+main {
     .queSomos {
         text-align: center;
         text-decoration: underline;
@@ -21,7 +15,7 @@
     }
 
     .fondoForm {
-        @include flex;
+        top: 1rem;
         box-shadow: 0 10px 30px #000;
         border: 1px solid #ffffff40;
 
@@ -40,21 +34,22 @@
         }
 
     }
-        .colorBtn {
-            background-color: $color-botones;
-            color: c$color-general;
-            font-size: 1.5rem;
-            margin: 5px;
 
-            &:hover {
-                background-color: $color-secundario;
-                color: $color-general;
-            }
+    .colorBtn {
+        background-color: $color-botones;
+        color: c$color-general;
+        font-size: 1.5rem;
+        margin: 5px;
+
+        &:hover {
+            background-color: $color-secundario;
+            color: $color-general;
         }
-
-        .smallForm {
-            font-size: 20px;
-        }
-
-
     }
+
+    .smallForm {
+        font-size: 20px;
+    }
+
+
+}
