@@ -1,0 +1,60 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+//Index
+
+.fondoIndex {
+    background-image: url("../img/Fondo\ Index");
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-size: cover;
+   
+
+    .queSomos {
+        text-align: center;
+        text-decoration: underline;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 2rem;
+        color: $color-general;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .fondoForm {
+        @include flex;
+        box-shadow: 0 10px 30px #000;
+        border: 1px solid #ffffff40;
+
+        .glass-effect {
+            background-color: #fafafa10;
+            backdrop-filter: blur(0.4rem);
+        }
+
+        .tituloForm {
+            text-decoration: underline;
+            color: $color-secundario;
+        }
+
+        .loremForm {
+            color: $color-general;
+        }
+
+    }
+        .colorBtn {
+            background-color: $color-botones;
+            color: c$color-general;
+            font-size: 1.5rem;
+            margin: 5px;
+
+            &:hover {
+                background-color: $color-secundario;
+                color: $color-general;
+            }
+        }
+
+        .smallForm {
+            font-size: 20px;
+        }
+
+
+    }

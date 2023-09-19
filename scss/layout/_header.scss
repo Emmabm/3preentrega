@@ -1,0 +1,22 @@
+@import "../utilidades/variables";
+
+header {
+    border-bottom: solid 5px gray;
+    background-color: $color-secundario;
+
+    .logoHot {
+        width: 180px;
+        height: 100px;
+      }
+      
+      /*NAV*/
+      
+      .fuentesNav {
+        font-size: 1.4rem;
+        padding-left: 3rem;
+      
+        li {
+          margin-left: 150px;
+        }
+      }
+}

@@ -1,0 +1,24 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+.error {
+    background-color: $color-botones;
+    div {
+        @include flex;
+        margin-top: 2rem;
+        .colorButton {
+            button {
+                background-color:$color-secundario;
+                width: 500px;
+                height: 70px;
+
+                a {
+                    color: $color-botones;
+                    text-decoration: none;
+                    font-size:1.5rem; 
+                }
+            }
+        }
+
+    }
+}
