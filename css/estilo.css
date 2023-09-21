@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
   background-color: bisque; }
@@ -10,7 +11,7 @@ header {
   header .logoHot {
     width: 180px;
     height: 100px;
-    margin-left: 30px; }
+    margin-left: 50px; }
   header .fuentesNav {
     font-size: 1.3rem;
     padding-left: 2rem; }
@@ -164,41 +165,50 @@ main .masOfertas {
     font-size: 1.5rem;
     color: black; }
 
-.fondoImg {
-  background-image: url("../img/HOME 3.png");
-  height: calc(100vh - 100px);
-  background-size: cover; }
+main section .card {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  height: 22rem; }
 
-.tienda {
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-.emaCaja {
-  height: 250px;
-  width: 700px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 4rem;
-  box-shadow: 20px 2px 10px;
-  opacity: 90%;
-  margin-top: 20rem;
-  max-width: 90%;
-  background-color: white;
-  position: absolute;
+main section .emaCaja {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto; }
-  .emaCaja h2 {
+  main section .emaCaja h2 {
     font-family: Georgia, 'Times New Roman', Times, serif; }
-  .emaCaja p,
-  .emaCaja a {
+  main section .emaCaja p,
+  main section .emaCaja a {
     color: blue; }
 
+/*.fondoImg {
+  background-image: url("../img/HOME 3.png");
+  height: calc(100vh - 100px);
+  background-size: cover;}*/
+/*
+.emaCaja {
+  @include lugar(250px,700px,0,0,0,0);
+  border-radius: 4rem;
+  box-shadow: 20px 2px 10px;
+  opacity: 90%;
+  margin-top: 20rem;
+  max-width: 90%;
+  background-color: $color-botones;
+  position: absolute;
+  @include flex;
+  
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  p,
+  a {
+    color: blue;
+  }
+}
+*/
 .tituloAyuda {
   text-decoration: underline;
   margin-left: 4rem; }

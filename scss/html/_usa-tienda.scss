@@ -1,21 +1,46 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
- 
-//Usa tu tienda 
+@import "../componentes/fuentes";
 
-.fondoImg {
+//Usa tu tienda 
+main {
+  section {
+
+    .card {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      height: 22rem;
+      
+  }
+
+
+  .emaCaja {
+
+    @include flex;
+
+    h2 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    p,
+    a {
+      color: blue;
+    }
+  }
+
+}
+
+}
+
+
+/*.fondoImg {
   background-image: url("../img/HOME 3.png");
   height: calc(100vh - 100px);
-  background-size: cover;
-}
+  background-size: cover;}*/
 
-.tienda {
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
+/*
 .emaCaja {
-  @include lugar(250px, 700px, 0, 0, 0, 0);
+  @include lugar(250px,700px,0,0,0,0);
   border-radius: 4rem;
   box-shadow: 20px 2px 10px;
   opacity: 90%;
@@ -24,7 +49,7 @@
   background-color: $color-botones;
   position: absolute;
   @include flex;
-
+  
   h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -34,3 +59,4 @@
     color: blue;
   }
 }
+*/
