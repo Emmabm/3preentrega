@@ -11,7 +11,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="ofertas-descuentos.html">Ofertas/Descuentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="usa-tienda.html">Usá en tu tienda</a>
+                        <a class="nav-link" href="usa-tienda.html">Tu tienda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ayuda.html">Ayuda</a>
@@ -44,13 +44,18 @@
             </nav>
         </div>
     </header>
-    <main class="container text-center">
+    <main class="container-fluid text-center">
         <!-- CARDS -->
+        <div class="row">
+            <div class="emaCaja">
+                <h2>¡¡Usa HotDiscounts en tu tienda y publicá todas las ofertas/descuentos!!</h2>
+            </div>
+        </div>
         <section class="row mx-5">
             <div class="col-sm-12 col-md-6 col-xl-4">
                 <div class="card" style="width: 20rem;">
                     <img src="https://img.freepik.com/foto-gratis/mujeres-sonrientes-tiro-medio-dispositivos_23-2149081077.jpg?size=626&ext=jpg&ga=GA1.1.547298153.1691186846&semt=ais"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="Imagen de personas generando dinero">
                     <div class="card-body">
                         <h5 class="card-title">Primer Paso</h5>
                         <p class="card-text">Registrate (razón social, cuit, correo)</p>
@@ -60,7 +65,7 @@
             <div class="col-sm-12 col-md-6 col-xl-4">
                 <div class="card" style="width: 20rem;">
                     <img src="https://img.freepik.com/fotos-premium/emocionado-joven-negro-mirando-pantalla-telefono-inteligente-gesticulando-si-sintiendose-feliz-victoria-linea_116547-23594.jpg?size=626&ext=jpg&ga=GA1.1.547298153.1691186846&semt=ais"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="Imagen de personas generando dinero">
                     <div class="card-body">
                         <h5 class="card-title">Segundo Paso</h5>
                         <p class="card-text">Vas a recibir un correo de verifición si estas apto para publicar</p>
@@ -70,37 +75,35 @@
             <div class="col-sm-12 col-md-6 col-xl-4">
                 <div class="card" style="width: 20rem;">
                     <img src="https://img.freepik.com/foto-gratis/orgulloso-propietario-negocio-que-gana-mucho-dinero-su-nueva-empresa-comercio-electronico-hombre-hispano-mucho-dinero-efectivo-debido-muchos-pedidos-clientes_662251-2195.jpg?size=626&ext=jpg&ga=GA1.1.547298153.1691186846&semt=ais"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="Imagen de personas generando dinero">
                     <div class="card-body">
                         <h5 class="card-title">Tercer Paso</h5>
                         <p class="card-text">Vas a poder subir todas las ofertas y descuentos de tu tienda</p>
                     </div>
                 </div>
             </div>
-        <!-- BOTON -->
+            <!-- BOTON -->
             <div class="row text-center">
                 <div class="col-sm-12 col-md-12 col-xl-12">
-                    <button type="button" class="btn btnBoton"><a href="">Registrate</a></button>
+                    <div class="contenedorBoton">
+                        <div class="boton-1"><a href="#" class="btn-1">Registrate</a></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- CAJA -->
         <div class="row">
-            <div class="emaCaja">
-                <h2>¡¡Usa HotDiscounts en tu tienda y publicá todas las ofertas/descuentos!!</h2>
-                <p>Breve tutorial de como usar HotDiscounts en tu tienda</p>
-                <a href="#">Ver video</a>
+            <div class="tutorial">
+                <h3>Breve video tutorial para que aprendas a usar HotDiscounts en tu tienda</h3>
+                <a href="../error404.html">Ver video</a>
             </div>
         </div>
-        </div>
     </main>
-
     <footer class="bg-light text-dark pt-5 pb-4">
         <div class="container-fluid text-center text-md-star">
             <div class="row mt-4">
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <hr class="mb-4">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Dejanos ayudarte</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold colorFooter">Dejanos ayudarte</h5>
                     <p>
                         <a href="#" class="text-dark">Atención al cliente: hotdiscounts@gmail.com</a>
                     </p>
@@ -112,7 +115,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
                     <hr class="mb-4">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Hacete miembro</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold colorFooter">Hacete miembro</h5>
 
                     <p>
                         <a href="../error404.html" class="text-dark">Afiliate</a>
@@ -130,25 +133,25 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
                     <hr class="mb-4">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Ubicación</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold colorFooter">Ubicación</h5>
                     <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-geo-alt" viewBox="0 0 16 16">
                             <path
                                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                        </svg> <a href="#" class="text-dark">Nuestras sucursales</a>
+                        </svg> <a href="../error404.html" class="text-dark">Nuestras sucursales</a>
                     </p>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
                     <hr class="mb-4">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold colorFooter">Contacto</h5>
 
-                    <p><a href="" class="text-dark">hotdiscounts5511@gmail.com </a></p>
+                    <p><a href="../error404.html" class="text-dark">hotdiscounts5511@gmail.com </a></p>
 
 
-                    <p><a href="" class="text-dark">+542615943833</a></p>
+                    <p><a href="../error404.html" class="text-dark">+542615943833</a></p>
 
 
 
@@ -156,8 +159,8 @@
                 <div class="text-center mb-2">
                     <p>
                         Copyright todos los derechos reservados
-                        <a href="#">
-                            <strong class="text-primary">Test</strong>
+                        <a href="../error404.html">
+                            <strong class="colorFooter">Test</strong>
                         </a>
                     </p>
 
