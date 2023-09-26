@@ -186,7 +186,26 @@ main .masOfertas {
     color: black; }
 
 main .emaCaja {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
+  main .emaCaja p {
+    color: coral;
+    font-size: 1.6rem;
+    text-decoration: underline; }
+
+main section .beneficios {
+  margin-bottom: 4rem; }
+  main section .beneficios h2 {
+    text-decoration: underline;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem; }
+  main section .beneficios p {
+    font-size: 1.4rem; }
+
+main section .pasos {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 4rem; }
 
 main section .card {
   text-align: center;
@@ -195,41 +214,34 @@ main section .card {
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-bottom: 2rem;
   margin: 1rem;
+  margin-left: 2rem;
   height: 22rem;
   box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
 
-main section .contenedorBoton {
+main section .boton-1 {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto; }
-  main section .contenedorBoton .boton-1 {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+  main section .boton-1 .btn-1 {
     text-decoration: none;
-    width: 300px;
-    height: 2rem;
-    color: rgba(255, 255, 255, 0.384);
+    width: 400px;
+    color: white;
     background-color: coral;
     border-radius: 4px;
-    box-shadow: inset 0 0 0 0 #6868ff;
+    box-shadow: inset 0 0 0 0 #2f2ff5;
     transition: ease-out .4s;
+    font-size: 1.7rem;
     outline: none; }
-    main section .contenedorBoton .boton-1:hover {
-      box-shadow: inset 300px 0 0 0 #6868ff;
+    main section .boton-1 .btn-1:hover {
+      box-shadow: inset 400px 0 0 0 #2f2ff5;
       color: white; }
-    main section .contenedorBoton .boton-1 a {
-      color: white;
-      text-decoration: none; }
 
 main .tutorial {
   text-align: center;
@@ -240,14 +252,18 @@ main .tutorial {
   margin: auto;
   width: 700px;
   background-color: #eecece;
-  border-radius: 4px;
-  margin-bottom: 1rem; }
-  main .tutorial h3 {
-    font-size: 1.5rem;
-    text-align: center; }
-  main .tutorial a {
-    background-color: white;
-    color: blue; }
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+
+main h3 {
+  font-size: 1.5rem;
+  text-align: center; }
+
+main a {
+  font-size: 1.2rem;
+  color: blue; }
 
 .tituloAyuda {
   text-decoration: underline;

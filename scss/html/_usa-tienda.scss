@@ -6,52 +6,80 @@
 main {
   .emaCaja {
     margin-top: 1rem;
+    margin-bottom: 3rem;
+    p {
+      color: $color-secundario;
+      font-size: 1.6rem;
+      text-decoration: underline
+
+    }
+  }
+  section {
+  
+    .beneficios {
+      margin-bottom: 4rem;
+      h2 {
+        text-decoration: underline;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    
   }
 
   section {
+    .pasos {
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-bottom: 4rem;
+
+    }
     .card {
       @include flex;
+      margin-bottom: 2rem;
       margin: 1rem;
+      margin-left: 2rem;
       height: 22rem;
       box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  
     }
-
-    .contenedorBoton {
+    .boton-1 {
       @include flex;
-
-      .boton-1 {
-        @include flex;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      .btn-1 {
         text-decoration: none;
-        width: 300px;
-        height: 2rem;
-        color: rgba(255, 255, 255, 0.384);
+        width: 400px;
+        color: rgba(255, 255, 255, 1);
         background-color: $color-secundario;
         border-radius: 4px;
-        box-shadow: inset 0 0 0 0 rgb(104, 104, 255);
+        box-shadow:inset  0 0 0 0 rgb(47, 47, 245);
         transition: ease-out .4s;
+        font-size: 1.7rem;
         outline: none;
-
         &:hover {
-          box-shadow: inset 300px 0 0 0 rgb(104, 104, 255);
+          box-shadow: inset 400px 0 0 0 rgb(47, 47, 245);
           color: $color-botones;
-        }
-
-        a {
-          color: $color-botones;
-          text-decoration: none;
         }
       }
     }
+
+
+ 
   }
 
   .tutorial {
     @include flex;
     width: 700px;
     background-color: rgb(238, 206, 206);
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  }
 
 
     h3 {
@@ -60,9 +88,8 @@ main {
     }
 
     a {
-      background-color: $color-botones;
+      font-size: 1.2rem;
       color: blue;
 
     }
   }
-}
