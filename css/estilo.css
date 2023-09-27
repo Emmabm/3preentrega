@@ -5,7 +5,7 @@ body {
   background-color: bisque; }
 
 header {
-  border-bottom: solid 5px gray;
+  border-bottom: solid 5px #5e5c5c;
   background-color: coral;
   /*NAV*/ }
   header .logoHot {
@@ -265,26 +265,5 @@ main a {
   font-size: 1.2rem;
   color: blue; }
 
-.tituloAyuda {
-  text-decoration: underline;
-  margin-left: 4rem; }
-
-.ayuda {
-  margin-left: 4rem; }
-  .ayuda a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px; }
-  .ayuda button {
-    color: black;
-    border-radius: 7px;
-    margin: 8px;
-    background-color: white;
-    padding: 5px 20px;
-    width: 25rem;
-    cursor: pointer;
-    transition: all 400ms ease;
-    margin-bottom: 18px; }
-    .ayuda button:hover {
-      background-color: gray;
-      transform: translate(1%); }
+main section {
+  margin: 1rem; }
