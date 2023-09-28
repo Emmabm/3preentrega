@@ -126,11 +126,20 @@ main .dropdown-ofertas {
   main .dropdown-ofertas:hover {
     margin-bottom: 24rem; }
   main .dropdown-ofertas .categorias {
-    width: 50rem;
+    width: 30rem;
     text-align: center;
     font-size: 2rem; }
+    @media screen and (max-width: 507px) {
+      main .dropdown-ofertas .categorias {
+        width: 20rem; } }
   main .dropdown-ofertas .catList {
-    width: 50rem; }
+    width: 30rem; }
+    @media screen and (max-width: 990px) {
+      main .dropdown-ofertas .catList {
+        width: 30rem; } }
+    @media screen and (max-width: 507px) {
+      main .dropdown-ofertas .catList {
+        width: 20rem; } }
     main .dropdown-ofertas .catList:hover {
       background-color: white; }
     main .dropdown-ofertas .catList li {
@@ -155,6 +164,8 @@ main .cardOfertas {
   main .cardOfertas:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translate(-3%); }
+  main .cardOfertas img {
+    height: 28rem; }
   main .cardOfertas .card-body {
     text-align: center; }
     main .cardOfertas .card-body .card-title {

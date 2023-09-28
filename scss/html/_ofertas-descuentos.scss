@@ -19,14 +19,24 @@ main {
         }
 
         .categorias {
-            width: 50rem;
+            @include mobile {
+                width: 20rem;
+            }
+            width: 30rem;
             text-align: center;
             font-size: 2rem;
+
         }
 
         .catList {
-            width: 50rem;
+            width: 30rem;
 
+            @include tablet {
+                width: 30rem;
+            }
+            @include mobile {
+                width: 20rem;
+            }
             &:hover {
                 background-color: $color-botones;
             }
@@ -61,6 +71,9 @@ main {
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             transform: translate(-3%);
+        }
+        img {
+            height: 28rem;
         }
 
         .card-body {
