@@ -1,7 +1,6 @@
-
 //sin parametros
 
-@mixin flex{
+@mixin flex {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -10,18 +9,43 @@
     margin: auto;
 }
 
-//mq 
+//mq categorias
 
-@mixin tablet {
-    @media screen and (max-width:990px) {
-        @content;
-        
-    }
-}
-@mixin mobile {
+@mixin mobileCategorias {
     @media screen and (max-width:507px) {
         @content;
-        
+
     }
 }
-    
+
+@mixin tabletCategorias {
+    @media screen and (max-width:990px) {
+        @content;
+
+    }
+}
+
+// mq bancos 
+
+
+@mixin mobileBancos {
+    @media screen and (max-width:540px) {
+        @content;
+
+    }
+}
+
+
+@mixin tabletBancos {
+    @media screen and (max-width:822px) {
+        @content;
+
+    }
+}
+
+@mixin escritorioBancos {
+    @media screen and (max-width: 1075px) {
+        @content;
+
+    }
+}

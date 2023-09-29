@@ -19,7 +19,7 @@ main {
         }
 
         .categorias {
-            @include mobile {
+            @include mobileCategorias {
                 width: 20rem;
             }
             width: 30rem;
@@ -31,10 +31,10 @@ main {
         .catList {
             width: 30rem;
 
-            @include tablet {
+            @include tabletCategorias {
                 width: 30rem;
             }
-            @include mobile {
+            @include mobileCategorias{
                 width: 20rem;
             }
             &:hover {
@@ -59,6 +59,8 @@ main {
     }
 
     .cardOfertas {
+        width: 22rem;
+        height: 34rem;
         padding: 0%;
         border-radius: 6px;
         overflow: hidden;
@@ -73,7 +75,7 @@ main {
             transform: translate(-3%);
         }
         img {
-            height: 28rem;
+            height: 23rem;
         }
 
         .card-body {

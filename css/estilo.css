@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: bisque; }
+  background-color: coral; }
 
 header {
   border-bottom: solid 5px #5e5c5c;
-  background-color: coral;
+  background-color: bisque;
   /*NAV*/ }
   header .logoHot {
     width: 180px;
@@ -18,10 +18,8 @@ header {
     header .fuentesNav li {
       margin-left: 80px; }
 
-footer {
-  background-color: tomato; }
-  footer .colorFooter {
-    color: coral; }
+footer .colorFooter {
+  color: coral; }
 
 .error {
   background-color: white; }
@@ -57,39 +55,49 @@ footer {
             text-decoration: none;
             font-size: 1rem; }
 
-main .queSomos {
-  text-align: center;
-  text-decoration: underline;
-  align-items: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 2rem;
-  color: black;
-  font-family: 'Roboto', sans-serif; }
-
-main .fondoForm {
-  top: 1rem;
-  box-shadow: 0 10px 30px #000;
-  border: 1px solid #ffffff40; }
-  main .fondoForm .glass-effect {
-    background-color: #fafafa10;
-    backdrop-filter: blur(0.4rem); }
-  main .fondoForm .tituloForm {
-    text-decoration: underline;
-    color: coral; }
-  main .fondoForm .loremForm {
-    color: black; }
-
-main .colorBtn {
+main section .significado {
+  margin-top: 3rem;
   background-color: white;
-  color: c black;
-  font-size: 1.5rem;
-  margin: 5px; }
-  main .colorBtn:hover {
-    background-color: coral;
-    color: black; }
+  border-radius: 5rem;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+  margin-bottom: 1rem; }
+  main section .significado .queSomos {
+    text-align: center;
+    text-decoration: underline;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Roboto', sans-serif; }
+  main section .significado p {
+    text-align: center;
+    font-size: 1.5rem; }
 
-main .smallForm {
-  font-size: 20px; }
+main .fondoImg {
+  border-radius: 3rem; }
+  main .fondoImg .fondoForm {
+    margin-top: 1rem;
+    box-shadow: 0 10px 30px #000;
+    border: 1px solid white;
+    background-color: bisque; }
+    main .fondoImg .fondoForm .glass-effect {
+      background-color: white;
+      backdrop-filter: blur(0.4rem); }
+    main .fondoImg .fondoForm .tituloForm {
+      text-decoration: underline;
+      color: coral; }
+    main .fondoImg .fondoForm .loremForm {
+      color: black; }
+  main .fondoImg .colorBtn {
+    background-color: white;
+    color: c black;
+    font-size: 1.5rem;
+    margin: 5px; }
+    main .fondoImg .colorBtn:hover {
+      background-color: coral;
+      color: black; }
+  main .fondoImg .smallForm {
+    font-size: 20px; }
 
 main .dropdown {
   text-align: center;
@@ -98,9 +106,33 @@ main .dropdown {
     width: 25rem;
     border-radius: 1rem;
     margin-top: 20px; }
+    @media screen and (max-width: 540px) {
+      main .dropdown .colorCard {
+        width: 16rem;
+        height: 6rem; } }
+    @media screen and (max-width: 822px) {
+      main .dropdown .colorCard {
+        width: 20rem;
+        height: 7rem; } }
+    @media screen and (max-width: 1075px) {
+      main .dropdown .colorCard {
+        width: 22rem;
+        height: 9rem; } }
     main .dropdown .colorCard img {
       width: 135px;
       height: 100px; }
+      @media screen and (max-width: 540px) {
+        main .dropdown .colorCard img {
+          width: 70px;
+          height: 40px; } }
+      @media screen and (max-width: 822px) {
+        main .dropdown .colorCard img {
+          width: 90px;
+          height: 60px; } }
+      @media screen and (max-width: 1075px) {
+        main .dropdown .colorCard img {
+          width: 120px;
+          height: 80px; } }
 
 main .dropdown-menu {
   width: 25rem;
@@ -153,6 +185,8 @@ main .dropdown-ofertas {
     text-decoration: none; }
 
 main .cardOfertas {
+  width: 22rem;
+  height: 34rem;
   padding: 0%;
   border-radius: 6px;
   overflow: hidden;
@@ -165,7 +199,7 @@ main .cardOfertas {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translate(-3%); }
   main .cardOfertas img {
-    height: 28rem; }
+    height: 23rem; }
   main .cardOfertas .card-body {
     text-align: center; }
     main .cardOfertas .card-body .card-title {
@@ -198,9 +232,11 @@ main .masOfertas {
 
 main .emaCaja {
   margin-top: 1rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
+  main .emaCaja h2 {
+    color: white; }
   main .emaCaja p {
-    color: coral;
+    color: black;
     font-size: 1.6rem;
     text-decoration: underline; }
 
@@ -209,14 +245,17 @@ main section .beneficios {
   main section .beneficios h2 {
     text-decoration: underline;
     font-size: 1.8rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    color: white; }
   main section .beneficios p {
     font-size: 1.4rem; }
 
 main section .pasos {
   text-transform: uppercase;
   text-decoration: underline;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  text-align: center;
+  color: white; }
 
 main section .card {
   text-align: center;
@@ -226,8 +265,6 @@ main section .card {
   justify-content: center;
   margin: auto;
   margin-bottom: 2rem;
-  margin: 1rem;
-  margin-left: 2rem;
   height: 22rem;
   box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
 
@@ -243,8 +280,8 @@ main section .boton-1 {
   main section .boton-1 .btn-1 {
     text-decoration: none;
     width: 400px;
-    color: white;
-    background-color: coral;
+    color: black;
+    background-color: bisque;
     border-radius: 4px;
     box-shadow: inset 0 0 0 0 #2f2ff5;
     transition: ease-out .4s;
@@ -262,7 +299,7 @@ main .tutorial {
   justify-content: center;
   margin: auto;
   width: 700px;
-  background-color: #eecece;
+  background-color: bisque;
   border-radius: 1rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
