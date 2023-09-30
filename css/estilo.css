@@ -214,6 +214,8 @@ main .dropdown-ofertas {
     text-decoration: none; }
 
 main .cardOfertas {
+  width: 20rem;
+  height: 34rem;
   background-color: white;
   margin: 1rem;
   padding: 0%;
@@ -228,7 +230,7 @@ main .cardOfertas {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translate(-3%); }
   main .cardOfertas img {
-    height: 23rem; }
+    height: 21rem; }
   main .cardOfertas .card-body {
     text-align: center; }
     main .cardOfertas .card-body .card-title {

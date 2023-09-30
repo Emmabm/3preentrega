@@ -60,6 +60,8 @@ main {
     }
 
     .cardOfertas {
+        width: 20rem;
+        height: 34rem;
         background-color: $color-botones;
         margin: 1rem;
         padding: 0%;
@@ -76,7 +78,7 @@ main {
             transform: translate(-3%);
         }
         img {
-            height: 23rem;
+            height: 21rem;
         }
 
         .card-body {
@@ -99,7 +101,7 @@ main {
             border-radius: 4px;
             transition: all 400ms ease;
             margin-bottom: 10px;
-
+            
             &:hover {
                 background: $color-secundario;
                 color: $color-botones;
