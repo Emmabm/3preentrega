@@ -49,3 +49,53 @@
 
     }
 }
+
+//mq index
+
+//Que somos 
+
+@mixin mobileSomos {
+    @media  screen and (max-width:550px) {
+        @content;
+    }
+}
+@mixin tabletSomos {
+    @media  screen and (max-width:800px) {
+        @content;
+    }
+}
+
+
+//mq carousel 
+
+@mixin mobileCarousel {
+    @media screen and (max-width:550px){
+        @content;
+        
+    }
+}
+
+@mixin tabletCarousel {
+    @media screen and (max-width:800px){
+        @content;
+        
+    }
+}
+
+//header 
+//nav
+
+@mixin mobileHeader { 
+    @media screen and (max-width:500px) {
+        @content;
+        
+    }
+
+}
+@mixin tabletHeader { 
+    @media screen and (max-width:850px) {
+        @content;
+        
+    }
+
+}

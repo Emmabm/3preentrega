@@ -13,10 +13,15 @@ header {
     height: 100px;
     margin-left: 50px; }
   header .fuentesNav {
-    font-size: 1.3rem;
-    padding-left: 2rem; }
+    font-size: 1.3rem; }
     header .fuentesNav li {
       margin-left: 80px; }
+      @media screen and (max-width: 850px) {
+        header .fuentesNav li {
+          font-size: 1rem; } }
+      @media screen and (max-width: 500px) {
+        header .fuentesNav li {
+          font-size: 0.8rem; } }
 
 footer .colorFooter {
   color: coral; }
@@ -55,13 +60,24 @@ footer .colorFooter {
             text-decoration: none;
             font-size: 1rem; }
 
-main section .significado {
-  margin-top: 3rem;
-  background-color: white;
-  border-radius: 5rem;
+main .slide img {
+  height: 60vh; }
+  @media screen and (max-width: 800px) {
+    main .slide img {
+      height: 45vh; } }
+  @media screen and (max-width: 550px) {
+    main .slide img {
+      height: 35vh; } }
+
+section .significado {
+  margin-top: 3.5rem;
+  background-color: bisque;
+  border-radius: 3rem;
+  height: 20rem;
   box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
   margin-bottom: 1rem; }
-  main section .significado .queSomos {
+  section .significado .queSomos {
+    margin-top: 3rem;
     text-align: center;
     text-decoration: underline;
     align-items: center;
@@ -69,34 +85,46 @@ main section .significado {
     font-size: 2rem;
     color: black;
     font-family: 'Roboto', sans-serif; }
-  main section .significado p {
+    @media screen and (max-width: 800px) {
+      section .significado .queSomos {
+        font-size: 1.6rem; } }
+    @media screen and (max-width: 550px) {
+      section .significado .queSomos {
+        font-size: 1rem; } }
+  section .significado p {
     text-align: center;
     font-size: 1.5rem; }
+    @media screen and (max-width: 800px) {
+      section .significado p {
+        font-size: 1rem; } }
+    @media screen and (max-width: 550px) {
+      section .significado p {
+        font-size: 0.8rem; } }
 
-main .fondoImg {
+.fondoImg {
   border-radius: 3rem; }
-  main .fondoImg .fondoForm {
+  .fondoImg .fondoForm {
     margin-top: 1rem;
     box-shadow: 0 10px 30px #000;
     border: 1px solid white;
     background-color: bisque; }
-    main .fondoImg .fondoForm .glass-effect {
+    .fondoImg .fondoForm .glass-effect {
       background-color: white;
       backdrop-filter: blur(0.4rem); }
-    main .fondoImg .fondoForm .tituloForm {
+    .fondoImg .fondoForm .tituloForm {
       text-decoration: underline;
       color: coral; }
-    main .fondoImg .fondoForm .loremForm {
+    .fondoImg .fondoForm .loremForm {
       color: black; }
-  main .fondoImg .colorBtn {
+  .fondoImg .colorBtn {
     background-color: white;
     color: c black;
     font-size: 1.5rem;
     margin: 5px; }
-    main .fondoImg .colorBtn:hover {
+    .fondoImg .colorBtn:hover {
       background-color: coral;
       color: black; }
-  main .fondoImg .smallForm {
+  .fondoImg .smallForm {
     font-size: 20px; }
 
 main .dropdown {
@@ -156,6 +184,7 @@ main .dropdown-ofertas {
   justify-content: center;
   margin-bottom: 20px; }
   main .dropdown-ofertas:hover {
+    transition: all 800ms ease;
     margin-bottom: 24rem; }
   main .dropdown-ofertas .categorias {
     width: 30rem;

@@ -4,14 +4,32 @@
 //Index
 
 main {
+    .slide {
+        img {
+            height: 60vh;
+
+            @include tabletCarousel {
+                height: 45vh;
+    
+            }
+            @include mobileCarousel {
+                height: 35vh;
+            }
+        }
+       
+    }
+  
+}
     section {
         .significado {
-            margin-top: 3rem;
-            background-color: $color-botones;
-            border-radius: 5rem;
+            margin-top: 3.5rem;
+            background-color: bisque;
+            border-radius: 3rem;
+            height: 20rem;
             box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
             margin-bottom: 1rem;
             .queSomos {
+                margin-top: 3rem;
                 text-align: center;
                 text-decoration: underline;
                 align-items: center;
@@ -19,11 +37,25 @@ main {
                 font-size: 2rem;
                 color: $color-general;
                 font-family: 'Roboto', sans-serif;
+                @include tabletSomos {
+                    font-size: 1.6rem;
+                }
+                @include mobileSomos {
+                    font-size: 1rem;
+                }
             }
 
             p {
                 text-align: center;
                 font-size: 1.5rem;
+                @include tabletSomos {
+                   font-size: 1rem;
+                }
+
+                @include mobileSomos {
+                    font-size: 0.8rem;
+                
+                }
             }
         }
     }
@@ -71,4 +103,3 @@ main {
 
 
     }
-}
